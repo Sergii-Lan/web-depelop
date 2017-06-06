@@ -75,6 +75,51 @@ header {
         color: #e7e1df;
         text-transform: uppercase; }
 
+.first-block {
+  height: 100px; }
+
+.technology {
+  padding: 10px 0;
+  background: url("../../img/tech-back.jpg") top center no-repeat; }
+
+.technology-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1775px;
+  margin: 0 auto; }
+
+.tech-html {
+  width: 20%;
+  height: 495px;
+  background-color: rgba(240, 240, 240, 0.5); }
+
+.tech-ajax {
+  width: 20%;
+  height: 730px;
+  background-color: rgba(240, 240, 240, 0.5); }
+
+.tech-css {
+  width: 35%;
+  height: 240px;
+  background-color: rgba(240, 240, 240, 0.5); }
+
+.tech-git {
+  width: 15%;
+  height: 240px;
+  background-color: rgba(240, 240, 240, 0.5); }
+
+.tech-grunt {
+  width: 15%;
+  height: 240px;
+  background-color: rgba(240, 240, 240, 0.5); }
+
+.tech-js {
+  width: 15%;
+  height: 240px;
+  background-color: rgba(240, 240, 240, 0.5); }
+
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 html, body, div, span, applet, object, iframe,
