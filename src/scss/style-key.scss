@@ -1,0 +1,31 @@
+@import 'reset';
+$primary-color: #353535;
+$light-color: #fff;
+$title-size: 3.6em;
+$width-full: 100%;
+
+@mixin title-text() {
+  font-size: $title-size;
+  text-transform: uppercase;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $width-full;
+  height: 400px;
+  padding-top: 30px;
+  background: url("../../img/key-bl1-bg.jpg") center top no-repeat;
+  background-attachment: fixed;
+  background-clip: initial;
+  background-origin: initial;
+  background-size: cover;
+  .title-block-opacity {
+    width: $width-full;
+    height: inherit;
+    background-color: $light-color;
+    opacity: .6;
+
+  }
+}
