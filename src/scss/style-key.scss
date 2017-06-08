@@ -2,6 +2,7 @@
 $primary-color: #353535;
 $light-color: #fff;
 $title-size: 3.6em;
+$text-size: 2.4em;
 $width-full: 100%;
 
 @mixin title-text() {
@@ -9,23 +10,53 @@ $width-full: 100%;
   text-transform: uppercase;
 }
 
+@mixin text-settings() {
+  font-size: $text-size;
+}
+
+body {
+   font-family: Roboto, sans-serif;
+   font-size: 10px;
+ }
+
 .title-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: $width-full;
-  height: 400px;
+  height: 500px;
   padding-top: 30px;
   background: url("../../img/key-bl1-bg.jpg") center top no-repeat;
   background-attachment: fixed;
   background-clip: initial;
   background-origin: initial;
   background-size: cover;
+
   .title-block-opacity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: $width-full;
     height: inherit;
     background-color: $light-color;
     opacity: .6;
 
+    .title-describ {
+      max-width: 625px;
+      padding-left: 50px;
+
+      h1 {
+        @include title-text();
+        margin-bottom: 35px;
+        font-weight: 600;
+      }
+
+      p {
+        @include text-settings();
+        ::first-line {
+          margin-left: 15px;
+        }
+      }
+    }
   }
 }
