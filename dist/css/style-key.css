@@ -47,6 +47,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin-top: 20px;
+  padding: 0 20px;
+  align-items: center; }
+  header ul {
+    display: flex;
+    font-size: 2em; }
+    header ul li {
+      margin-right: 10px; }
+      header ul li a {
+        color: #e7e1df;
+        text-transform: uppercase; }
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 10px; }
@@ -77,11 +93,72 @@ body {
       .title-block .title-block-opacity .title-describ h1 {
         font-size: 3.6em;
         text-transform: uppercase;
+        text-align: center;
         margin-bottom: 35px;
         font-weight: 600; }
       .title-block .title-block-opacity .title-describ p {
-        font-size: 2.4em; }
-        .title-block .title-block-opacity .title-describ p ::first-line {
-          margin-left: 15px; }
+        font-size: 2.4em;
+        text-indent: 1.5em;
+        text-align: justify; }
+
+.second-block, .third-block, .fourth-block {
+  width: 100%;
+  height: 490px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: #868686; }
+  .second-block .second-container, .third-block .second-container, .fourth-block .second-container, .third-block .third-container, .fourth-block .fourth-container {
+    max-width: 16888px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .second-block .second-container .second-block-img, .third-block .second-container .second-block-img, .fourth-block .second-container .second-block-img, .third-block .third-container .second-block-img, .fourth-block .fourth-container .second-block-img {
+      width: 45%;
+      height: inherit;
+      background: url("../../img/monitor-scan.png") no-repeat center center;
+      background-size: contain; }
+    .second-block .second-container .second-block-descr, .third-block .second-container .second-block-descr, .fourth-block .second-container .second-block-descr, .third-block .third-container .second-block-descr, .fourth-block .fourth-container .second-block-descr, .fourth-block .fourth-container .fourth-block-descr {
+      width: 45%; }
+      .second-block .second-container .second-block-descr h2, .third-block .second-container .second-block-descr h2, .fourth-block .second-container .second-block-descr h2, .third-block .third-container .second-block-descr h2, .fourth-block .fourth-container .second-block-descr h2, .fourth-block .fourth-container .fourth-block-descr h2 {
+        margin-bottom: 35px;
+        font-size: 3.2em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff; }
+      .second-block .second-container .second-block-descr p, .third-block .second-container .second-block-descr p, .fourth-block .second-container .second-block-descr p, .third-block .third-container .second-block-descr p, .fourth-block .fourth-container .second-block-descr p, .fourth-block .fourth-container .fourth-block-descr p {
+        font-size: 2.4em;
+        text-align: center;
+        color: #fff; }
+
+.third-block {
+  padding: 0;
+  background-color: #fff; }
+  .third-block .third-container {
+    justify-content: flex-end; }
+    .third-block .third-container .third-block-descr {
+      width: 45%; }
+      .third-block .third-container .third-block-descr h2 {
+        margin-bottom: 35px;
+        font-size: 3.2em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #353535; }
+      .third-block .third-container .third-block-descr p {
+        font-size: 2.4em;
+        text-align: center;
+        color: #353535; }
+    .third-block .third-container .third-block-img {
+      width: 50%;
+      height: inherit;
+      background: url("../../img/mobile-key.png") no-repeat center left;
+      background-size: cover; }
+
+.fourth-block .fourth-container .fourth-block-img {
+  width: 45%;
+  height: inherit;
+  background: url("../../img/popup-key.png") no-repeat center center;
+  background-size: contain; }
 
 /*# sourceMappingURL=style-key.css.map */

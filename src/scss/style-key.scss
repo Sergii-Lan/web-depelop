@@ -1,18 +1,31 @@
 @import 'reset';
+@import 'header';
+@import 'footer';
+
 $primary-color: #353535;
+$primary-bg-color: #868686;
 $light-color: #fff;
 $title-size: 3.6em;
+$h2-size: 3.2em;
 $text-size: 2.4em;
 $width-full: 100%;
 
 @mixin title-text() {
   font-size: $title-size;
   text-transform: uppercase;
+  text-align: center;
 }
 
+@mixin title-text-2() {
+  margin-bottom: 35px;
+  font-size: $h2-size;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 @mixin text-settings() {
   font-size: $text-size;
+  text-align: center;
 }
 
 body {
@@ -53,11 +66,99 @@ body {
       }
 
       p {
-        @include text-settings();
-        ::first-line {
-          margin-left: 15px;
-        }
+        font-size: $text-size;
+        text-indent: 1.5em;
+        text-align: justify;
       }
+    }
+  }
+}
+
+.second-block {
+  width: $width-full;
+  height: 490px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: $primary-bg-color;
+
+  .second-container {
+    max-width: 16888px;
+    width: $width-full;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .second-block-img {
+      width: 45%;
+      height: inherit;
+      background: url("../../img/monitor-scan.png") no-repeat center center;
+      background-size: contain;
+    }
+
+    .second-block-descr {
+      width: 45%;
+
+      h2 {
+        @include title-text-2();
+        color: $light-color;
+      }
+
+      p {
+        @include text-settings();
+        color: $light-color;
+      }
+    }
+  }
+}
+
+.third-block {
+  @extend .second-block;
+  padding: 0;
+  background-color: $light-color;
+
+  .third-container {
+    @extend .second-container;
+    justify-content: flex-end;
+
+    .third-block-descr {
+      width: 45%;
+
+      h2 {
+        @include  title-text-2();
+        color: $primary-color;
+      }
+
+      p {
+        @include text-settings();
+        color: $primary-color;
+      }
+    }
+
+    .third-block-img {
+      width: 50%;
+      height: inherit;
+      background: url("../../img/mobile-key.png") no-repeat center left;
+     background-size: cover;
+    }
+  }
+}
+
+.fourth-block {
+  @extend .second-block;
+
+  .fourth-container {
+    @extend .second-container;
+
+    .fourth-block-img {
+      width: 45%;
+      height: inherit;
+      background: url("../../img/popup-key.png") no-repeat center center;
+      background-size: contain;
+    }
+
+    .fourth-block-descr {
+      @extend .second-block-descr;
     }
   }
 }
