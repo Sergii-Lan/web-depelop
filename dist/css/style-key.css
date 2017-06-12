@@ -63,6 +63,30 @@ header {
         color: #e7e1df;
         text-transform: uppercase; }
 
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(../../dist/fonts/Fl4y0QdOxyyTHEGMXX8kcRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2"); }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(../../dist/fonts/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format("woff2"); }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(../../dist/fonts/isZ-wbCXNKAbnjo6_TwHThJtnKITppOI_IvcXXDNrsc.woff2) format("woff2"); }
+@keyframes animate-text-title {
+  100% {
+    opacity: 1;
+    transform: translateY(40px) scale(0.85); } }
+@keyframes animate-text {
+  100% {
+    opacity: 1;
+    transform: translateY(40px) scale(0.85); } }
 body {
   font-family: Roboto, sans-serif;
   font-size: 10px; }
@@ -95,32 +119,46 @@ body {
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 35px;
-        font-weight: 600; }
+        font-weight: 600;
+        opacity: .4;
+        will-change: transform;
+        animation: animate-text-title 1.4s 1s linear forwards; }
       .title-block .title-block-opacity .title-describ p {
         font-size: 2.4em;
         text-indent: 1.5em;
-        text-align: justify; }
+        text-align: justify;
+        opacity: .4;
+        will-change: transform;
+        animation: animate-text 1.4s 1s linear forwards; }
 
 .second-block, .third-block, .fourth-block {
   width: 100%;
   height: 490px;
   padding: 20px 0;
   box-sizing: border-box;
-  background-color: #868686; }
+  background-color: #fff;
+  transition: background-color .8s linear; }
   .second-block .second-container, .third-block .second-container, .fourth-block .second-container, .third-block .third-container, .fourth-block .fourth-container {
     max-width: 16888px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
     .second-block .second-container .second-block-img, .third-block .second-container .second-block-img, .fourth-block .second-container .second-block-img, .third-block .third-container .second-block-img, .fourth-block .fourth-container .second-block-img {
+      display: flex;
       width: 45%;
       height: inherit;
-      background: url("../../img/monitor-scan.png") no-repeat center center;
-      background-size: contain; }
+      margin-left: -1500px;
+      opacity: 0; }
+      .second-block .second-container .second-block-img img, .third-block .second-container .second-block-img img, .fourth-block .second-container .second-block-img img, .third-block .third-container .second-block-img img, .fourth-block .fourth-container .second-block-img img {
+        width: auto;
+        height: 100%; }
     .second-block .second-container .second-block-descr, .third-block .second-container .second-block-descr, .fourth-block .second-container .second-block-descr, .third-block .third-container .second-block-descr, .fourth-block .fourth-container .second-block-descr, .fourth-block .fourth-container .fourth-block-descr {
-      width: 45%; }
+      width: 45%;
+      margin-right: -1500px;
+      opacity: 0; }
       .second-block .second-container .second-block-descr h2, .third-block .second-container .second-block-descr h2, .fourth-block .second-container .second-block-descr h2, .third-block .third-container .second-block-descr h2, .fourth-block .fourth-container .second-block-descr h2, .fourth-block .fourth-container .fourth-block-descr h2 {
         margin-bottom: 35px;
         font-size: 3.2em;
@@ -134,11 +172,12 @@ body {
 
 .third-block {
   padding: 0;
-  background-color: #fff; }
+  background-color: #868686; }
   .third-block .third-container {
     justify-content: flex-end; }
     .third-block .third-container .third-block-descr {
-      width: 45%; }
+      width: 45%;
+      margin-left: -1500px; }
       .third-block .third-container .third-block-descr h2 {
         margin-bottom: 35px;
         font-size: 3.2em;
@@ -152,13 +191,107 @@ body {
     .third-block .third-container .third-block-img {
       width: 50%;
       height: inherit;
-      background: url("../../img/mobile-key.png") no-repeat center left;
-      background-size: cover; }
+      margin-right: -1500px;
+      text-align: end; }
+      .third-block .third-container .third-block-img img {
+        height: inherit;
+        width: auto; }
 
 .fourth-block .fourth-container .fourth-block-img {
+  display: flex;
+  align-items: center;
   width: 45%;
   height: inherit;
-  background: url("../../img/popup-key.png") no-repeat center center;
-  background-size: contain; }
+  margin-left: -1500px; }
+  .fourth-block .fourth-container .fourth-block-img img {
+    max-height: 100%;
+    width: 100%;
+    height: auto; }
+
+@media (max-width: 996px) {
+  .title-block {
+    background-position: left top; }
+    .title-block .title-block-opacity .title-describ {
+      max-width: 730px;
+      margin: 0 auto;
+      padding-left: 0; }
+      .title-block .title-block-opacity .title-describ h1 {
+        font-size: 2.8em; }
+      .title-block .title-block-opacity .title-describ p {
+        font-size: 1.8em; }
+
+  .second-block, .third-block, .fourth-block {
+    height: initial; }
+    .second-block .second-container, .third-block .second-container, .fourth-block .second-container, .third-block .third-container, .fourth-block .fourth-container {
+      flex-direction: column;
+      height: initial; }
+      .second-block .second-container .second-block-img, .third-block .second-container .second-block-img, .fourth-block .second-container .second-block-img, .third-block .third-container .second-block-img, .fourth-block .fourth-container .second-block-img {
+        width: 100%;
+        height: initial; }
+        .second-block .second-container .second-block-img img, .third-block .second-container .second-block-img img, .fourth-block .second-container .second-block-img img, .third-block .third-container .second-block-img img, .fourth-block .fourth-container .second-block-img img {
+          width: 90%;
+          margin: 0 auto; }
+      .second-block .second-container .second-block-descr, .third-block .second-container .second-block-descr, .fourth-block .second-container .second-block-descr, .third-block .third-container .second-block-descr, .fourth-block .fourth-container .second-block-descr, .fourth-block .fourth-container .fourth-block-descr {
+        width: 100%;
+        height: initial;
+        margin-top: 40px;
+        margin-bottom: 40px; }
+        .second-block .second-container .second-block-descr h2, .third-block .second-container .second-block-descr h2, .fourth-block .second-container .second-block-descr h2, .third-block .third-container .second-block-descr h2, .fourth-block .fourth-container .second-block-descr h2, .fourth-block .fourth-container .fourth-block-descr h2 {
+          font-size: 2.8em; }
+        .second-block .second-container .second-block-descr p, .third-block .second-container .second-block-descr p, .fourth-block .second-container .second-block-descr p, .third-block .third-container .second-block-descr p, .fourth-block .fourth-container .second-block-descr p, .fourth-block .fourth-container .fourth-block-descr p {
+          font-size: 1.8em; }
+
+  .third-block .third-container {
+    flex-direction: column-reverse; }
+    .third-block .third-container .third-block-img {
+      width: 100%;
+      height: initial; }
+      .third-block .third-container .third-block-img img {
+        height: 60vw;
+        width: auto; }
+    .third-block .third-container .third-block-descr {
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      .third-block .third-container .third-block-descr h2 {
+        font-size: 2.8em; }
+      .third-block .third-container .third-block-descr p {
+        font-size: 2.8em; }
+
+  .fourth-block .fourth-container .fourth-block-img {
+    width: 90%; } }
+@media (min-width: 320px) and (max-width: 767px) {
+  .title-block {
+    height: initial;
+    background: url("../../img/key-bl1-bg-mob.jpg") center top no-repeat fixed;
+    background-clip: initial;
+    background-origin: initial;
+    background-size: cover; }
+    .title-block .title-block-opacity .title-describ {
+      max-width: 320px;
+      padding-bottom: 50px;
+      padding-left: 0; }
+      .title-block .title-block-opacity .title-describ h1 {
+        font-size: 1.8em; }
+      .title-block .title-block-opacity .title-describ p {
+        font-size: 1.4em; }
+
+  .second-block .second-container .second-block-descr, .third-block .second-container .second-block-descr, .fourth-block .second-container .second-block-descr, .third-block .third-container .second-block-descr, .fourth-block .fourth-container .second-block-descr, .fourth-block .fourth-container .fourth-block-descr {
+    margin-top: 30px;
+    margin-bottom: 10px; }
+    .second-block .second-container .second-block-descr h2, .third-block .second-container .second-block-descr h2, .fourth-block .second-container .second-block-descr h2, .third-block .third-container .second-block-descr h2, .fourth-block .fourth-container .second-block-descr h2, .fourth-block .fourth-container .fourth-block-descr h2 {
+      margin-bottom: 20px;
+      font-size: 1.8em; }
+    .second-block .second-container .second-block-descr p, .third-block .second-container .second-block-descr p, .fourth-block .second-container .second-block-descr p, .third-block .third-container .second-block-descr p, .fourth-block .fourth-container .second-block-descr p, .fourth-block .fourth-container .fourth-block-descr p {
+      font-size: 1.4em; }
+
+  .third-block .third-container .third-block-descr {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .third-block .third-container .third-block-descr h2 {
+      margin-bottom: 20px;
+      font-size: 1.8em; }
+    .third-block .third-container .third-block-descr p {
+      font-size: 1.4em; } }
 
 /*# sourceMappingURL=style-key.css.map */
