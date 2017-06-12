@@ -172,4 +172,34 @@ a {
   .tech-ps img {
     width: 90%; }
 
+/**--------------------portfolio----------------*/
+.portfolio {
+  max-width: 1350px;
+  margin: 0 auto; }
+
+.portfolio-h1 {
+  width: 300px;
+  margin: 0 auto;
+  border-bottom: 2px solid #28b494;
+  color: #28b494;
+  font-size: 4em;
+  text-transform: uppercase;
+  text-align: center; }
+
+.portfolio-key {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px; }
+  .portfolio-key div {
+    text-align: right; }
+  .portfolio-key .portfolio-key-info-h1 {
+    font-size: 4em; }
+  .portfolio-key .portfolio-key-info-h2 {
+    font-size: 3em; }
+  .portfolio-key .portfolio-key-info-text {
+    width: 530px;
+    font-size: 2em; }
+  .portfolio-key .portfolio-key-info-text2 {
+    font-size: 2em; }
+
 /*# sourceMappingURL=style-main.css.map */
