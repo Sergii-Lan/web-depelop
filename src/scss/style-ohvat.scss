@@ -1,0 +1,14 @@
+@import "footer";
+@import "header";
+@import "reset";
+@import "fonts";
+
+body {
+  font-family: Roboto sans-serif;
+  font-size: 10px;
+}
+.first-block-wrapper {
+  background: url("../../dist/css/style-ohvat.css") no-repeat center top fixed;
+  background-clip: initial;
+
+}
