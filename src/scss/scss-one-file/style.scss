@@ -1,57 +1,0 @@
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(../../dist/fonts/Fl4y0QdOxyyTHEGMXX8kcRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(../../dist/fonts/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(../../dist/fonts/isZ-wbCXNKAbnjo6_TwHThJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1800px;
-  margin-top: 20px;
-  padding: 0 20px;
-  align-items: center;
-  ul {
-    display: flex;
-    font-size: 2em;
-    li {
-      margin-right: 10px;
-      a {
-        color: #e7e1df;
-        text-transform: uppercase;
-      }
-    }
-  }
-}@import "reset";@import "header";@import "footer";body {  margin: 0 auto;  font-family: 'Ubuntu', sans-serif;  font-size: 10px;}.wrapper {  width: 100%;  margin: 0 auto;}a {  text-decoration: none;}.first-block {  height: 100px;}.technology {  padding: 10px 0;  background: url("../../img/tech-back.jpg") top center no-repeat;}.technology-block {  display: flex;  justify-content: space-around;  flex-wrap: wrap;  width: 100%;  max-width: 1775px;  margin: 0 auto;}.tech-html {  width: 20%;  height: 495px;  background-color: rgba(240,240,240,0.5);}.tech-ajax {  width: 20%;  height: 730px;  background-color: rgba(240,240,240,0.5);}.tech-css {  width: 35%;  height: 240px;  background-color: rgba(240,240,240,0.5);}.tech-git {  width: 15%;  height: 240px;  background-color: rgba(240,240,240,0.5);}.tech-grunt {  width: 15%;  height: 240px;  background-color: rgba(240,240,240,0.5);}.tech-js {  width: 15%;  height: 240px;  background-color: rgba(240,240,240,0.5);}/* http://meyerweb.com/eric/tools/css/reset/ *//* v1.0 | 20080212 */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {  margin: 0;  padding: 0;  border: 0;  outline: 0;  font-size: 100%;  vertical-align: baseline;  background: transparent;}body {  line-height: 1;}ol, ul {  list-style: none;}blockquote, q {  quotes: none;}blockquote:before, blockquote:after,q:before, q:after {  content: '';  content: none;}/* remember to define focus styles! */:focus {  outline: 0;}/* remember to highlight inserts somehow! */ins {  text-decoration: none;}del {  text-decoration: line-through;}/* tables still need 'cellspacing="0"' in the markup */table {  border-collapse: collapse;  border-spacing: 0;}@import "reset";@import "header";@import "footer";body {  margin: 0 auto;  font-family: 'Ubuntu', sans-serif;  font-size: 10px;}.wrapper {  width: 100%;  margin: 0 auto;}a {  text-decoration: none;}.first-block {  height: 100px;}.technology {  padding: 10px 0;  background: url("../../img/tech-back.jpg") top center no-repeat;}.technology-block {  display: flex;  justify-content: space-around;  flex-wrap: wrap;  width: 100%;  max-width: 1775px;  margin: 0 auto;}.tech-html {  width: 20%;  height: 495px;  background-color: rgba(240,240,240,0.5);}.tech-ajax {  width: 20%;  height: 730px;  background-color: rgba(240,240,240,0.5);}.tech-css {  width: 35%;  height: 240px;  background-color: rgba(240,240,240,0.5);}.tech-git {  width: 15%;  height: 240px;  background-color: rgba(240,240,240,0.5);}.tech-grunt {  width: 15%;  height: 240px;  background-color: rgba(240,240,240,0.5);}.tech-js {  width: 15%;  height: 240px;  background-color: rgba(240,240,240,0.5);}/* http://meyerweb.com/eric/tools/css/reset/ *//* v1.0 | 20080212 */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {  margin: 0;  padding: 0;  border: 0;  outline: 0;  font-size: 100%;  vertical-align: baseline;  background: transparent;}body {  line-height: 1;}ol, ul {  list-style: none;}blockquote, q {  quotes: none;}blockquote:before, blockquote:after,q:before, q:after {  content: '';  content: none;}/* remember to define focus styles! */:focus {  outline: 0;}/* remember to highlight inserts somehow! */ins {  text-decoration: none;}del {  text-decoration: line-through;}/* tables still need 'cellspacing="0"' in the markup */table {  border-collapse: collapse;  border-spacing: 0;}
-header {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1800px;
-  margin-top: 20px;
-  padding: 0 20px;
-  align-items: center;
-  ul {
-    display: flex;
-    font-size: 2em;
-    li {
-      margin-right: 10px;
-      a {
-        color: #e7e1df;
-        text-transform: uppercase;
-      }
-    }
-  }
-}
