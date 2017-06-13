@@ -17,6 +17,46 @@
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(../../dist/fonts/isZ-wbCXNKAbnjo6_TwHThJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
 }
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+  width: 968px;
+  margin: 0 auto;
+  .contacts-foto {
+    width: 50%;
+    img {
+      display: block;
+      width: 90%;
+      margin: 20px auto 0 auto;
+      border-radius: 50%;
+    }
+    .contacts-foto-text {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 3.6em;
+    }
+  }
+  .contacts-info {
+    width: 50%;
+    font-size: 2.1em;
+    .contacts-info-1 {
+      margin-top: 20px;
+    }
+    .contacts-info-2 {
+      margin-top: 60px;
+    }
+    .contacts-info-3 {
+      margin-top: 60px;
+    }
+  }
+}
+
+.footer-bottom {
+  height: 214px;
+  background: url("../../img/img-footer.jpg") no-repeat top center;
+}
+
+
 header {
   display: flex;
   justify-content: space-between;
