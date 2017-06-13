@@ -63,6 +63,36 @@ header {
         color: #e7e1df;
         text-transform: uppercase; }
 
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+  width: 968px;
+  margin: 0 auto; }
+  .contacts-block .contacts-foto {
+    width: 50%; }
+    .contacts-block .contacts-foto img {
+      display: block;
+      width: 90%;
+      margin: 20px auto 0 auto;
+      border-radius: 50%; }
+    .contacts-block .contacts-foto .contacts-foto-text {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 3.6em; }
+  .contacts-block .contacts-info {
+    width: 50%;
+    font-size: 2.1em; }
+    .contacts-block .contacts-info .contacts-info-1 {
+      margin-top: 20px; }
+    .contacts-block .contacts-info .contacts-info-2 {
+      margin-top: 60px; }
+    .contacts-block .contacts-info .contacts-info-3 {
+      margin-top: 60px; }
+
+.footer-bottom {
+  height: 214px;
+  background: url("../../img/img-footer.jpg") no-repeat top center; }
+
 /* cyrillic */
 @font-face {
   font-family: 'Roboto';
