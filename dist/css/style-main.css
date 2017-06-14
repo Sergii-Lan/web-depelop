@@ -132,14 +132,24 @@ a {
   flex-wrap: wrap; }
 
 .tech-html {
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
   height: 495px;
   background-color: rgba(240, 240, 240, 0.5); }
+  .tech-html img {
+    width: 50%; }
 
 .tech-ajax {
   width: 24%;
   height: 730px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .tech-ajax img {
+    width: 90%; }
 
 .tech-block-main-top {
   display: flex;
@@ -148,28 +158,104 @@ a {
   margin-bottom: 10px; }
 
 .tech-css {
-  width: 65%;
+  width: 67%;
   height: 240px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .tech-css img {
+    width: 27%; }
+  .tech-css .tech-css-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%; }
 
 .tech-git {
+  position: relative;
   width: 30%;
   height: 240px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  align-items: center; }
   .tech-git img {
-    width: 95%; }
+    width: 95%;
+    margin: 0 auto; }
+  .tech-git .git-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(93, 91, 99, 0.78); }
+    .tech-git .git-hover .git-hover-heading {
+      display: inline-block;
+      margin: 25px auto 0 auto;
+      padding: 5px 7px;
+      background: #33302f;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 3.6em;
+      text-align: center; }
+    .tech-git .git-hover .git-hover-text {
+      margin: 25px auto 0 auto;
+      width: 90%;
+      font-size: 2.4em;
+      color: #fff; }
+  .tech-git .git-hover:hover {
+    opacity: 1; }
 
 .tech-grunt {
+  position: relative;
   width: 30%;
   height: 240px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  align-items: center; }
+  .tech-grunt .grunt-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(93, 91, 99, 0.78); }
+    .tech-grunt .grunt-hover .grunt-hover-heading {
+      display: inline-block;
+      margin: 25px auto 0 auto;
+      padding: 5px 7px;
+      background: #33302f;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 3.6em;
+      text-align: center; }
+    .tech-grunt .grunt-hover .grunt-hover-text {
+      margin: 25px auto 0 auto;
+      width: 90%;
+      font-size: 2.4em;
+      color: #fff; }
   .tech-grunt img {
-    width: 70%; }
+    width: 65%;
+    margin: 0 auto; }
+  .tech-grunt .grunt-hover:hover {
+    opacity: 1; }
 
 .tech-js {
-  width: 65%;
+  width: 67%;
   height: 240px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .tech-js img {
+    width: 27%; }
+  .tech-js .tech-js-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 68%; }
 
 .tech-block-main-bottom {
   display: flex;
@@ -177,30 +263,138 @@ a {
   width: 98%; }
 
 .tech-bootstrap {
+  position: relative;
   width: 18%;
   height: 240px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  align-items: center; }
+  .tech-bootstrap .bootstrap-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(93, 91, 99, 0.78); }
+    .tech-bootstrap .bootstrap-hover .bootstrap-hover-heading {
+      display: inline-block;
+      margin: 25px auto 0 auto;
+      padding: 5px 7px;
+      background: #33302f;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 3.6em;
+      text-align: center; }
+    .tech-bootstrap .bootstrap-hover .bootstrap-hover-text {
+      margin: 25px auto 0 auto;
+      width: 90%;
+      font-size: 2.4em;
+      color: #fff; }
   .tech-bootstrap img {
-    width: 95%; }
+    width: 95%;
+    margin: 0 auto; }
+  .tech-bootstrap .bootstrap-hover:hover {
+    opacity: 1; }
 
 .tech-php {
-  width: 33%;
+  width: 38%;
   height: 240px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .tech-php img {
+    width: 40%; }
+  .tech-php .tech-php-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%; }
 
 .tech-sass {
+  position: relative;
   width: 20%;
   height: 240px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  align-items: center; }
+  .tech-sass .sass-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(93, 91, 99, 0.78); }
+    .tech-sass .sass-hover .sass-hover-heading {
+      display: inline-block;
+      margin: 25px auto 0 auto;
+      padding: 5px 7px;
+      background: #33302f;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 3.6em;
+      text-align: center; }
+    .tech-sass .sass-hover .sass-hover-text {
+      margin: 25px auto 0 auto;
+      width: 90%;
+      font-size: 2.4em;
+      color: #fff; }
   .tech-sass img {
-    width: 95%; }
+    width: 95%;
+    margin: 0 auto; }
+  .tech-sass .sass-hover:hover {
+    opacity: 1; }
 
 .tech-ps {
+  position: relative;
   width: 20%;
   height: 240px;
-  background-color: rgba(240, 240, 240, 0.5); }
+  background-color: rgba(240, 240, 240, 0.5);
+  display: flex;
+  align-items: center; }
+  .tech-ps .ps-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(93, 91, 99, 0.78); }
+    .tech-ps .ps-hover .ps-hover-heading {
+      display: inline-block;
+      margin: 25px auto 0 auto;
+      padding: 5px 7px;
+      background: #33302f;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 3.6em;
+      text-align: center; }
+    .tech-ps .ps-hover .ps-hover-text {
+      margin: 25px auto 0 auto;
+      width: 90%;
+      font-size: 2.4em;
+      color: #fff; }
   .tech-ps img {
-    width: 90%; }
+    width: 90%;
+    margin: 0 auto; }
+  .tech-ps .ps-hover:hover {
+    opacity: 1; }
+
+.html-heading {
+  display: inline-block;
+  margin: 25px auto 0 auto;
+  padding: 5px 7px;
+  background: #fff;
+  text-transform: uppercase;
+  font-size: 3.6em;
+  text-align: center; }
+
+.html-text {
+  margin: 25px auto 0 auto;
+  width: 90%;
+  font-size: 2.4em; }
 
 /**--------------------portfolio----------------*/
 .portfolio {
