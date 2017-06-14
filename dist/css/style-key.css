@@ -54,6 +54,32 @@ header {
   margin-top: 20px;
   padding: 0 20px;
   align-items: center; }
+  header a.logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    text-transform: uppercase;
+    font-size: 3.6em; }
+    header a.logo .creative-logo {
+      width: 67%;
+      padding: 3px;
+      color: #6a6461;
+      text-align: center;
+      box-sizing: border-box; }
+    header a.logo .web-logo {
+      width: 33%;
+      padding: 3px;
+      background-color: #28b494;
+      color: #fff;
+      text-align: center;
+      box-sizing: border-box; }
+    header a.logo .development-logo {
+      width: 100%;
+      padding: 3px;
+      color: #fff;
+      background-color: #28b494;
+      box-sizing: border-box;
+      text-align: center; }
   header ul {
     display: flex;
     font-size: 2em; }

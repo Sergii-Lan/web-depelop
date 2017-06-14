@@ -1,0 +1,319 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin-top: 20px;
+  padding: 0 20px;
+  align-items: center; }
+  header a.logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    text-transform: uppercase;
+    font-size: 3.6em; }
+    header a.logo .creative-logo {
+      width: 67%;
+      padding: 3px;
+      color: #6a6461;
+      text-align: center;
+      box-sizing: border-box; }
+    header a.logo .web-logo {
+      width: 33%;
+      padding: 3px;
+      background-color: #28b494;
+      color: #fff;
+      text-align: center;
+      box-sizing: border-box; }
+    header a.logo .development-logo {
+      width: 100%;
+      padding: 3px;
+      color: #fff;
+      background-color: #28b494;
+      box-sizing: border-box;
+      text-align: center; }
+  header ul {
+    display: flex;
+    font-size: 2em; }
+    header ul li {
+      margin-right: 10px; }
+      header ul li a {
+        color: #e7e1df;
+        text-transform: uppercase; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(../../dist/fonts/Fl4y0QdOxyyTHEGMXX8kcRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2"); }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(../../dist/fonts/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format("woff2"); }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(../../dist/fonts/isZ-wbCXNKAbnjo6_TwHThJtnKITppOI_IvcXXDNrsc.woff2) format("woff2"); }
+@keyframes title-block {
+  20% {
+    margin-right: 0; }
+  30% {
+    margin-right: 0;
+    background-color: rgba(53, 53, 53, 0.6); }
+  100% {
+    margin-right: 0;
+    background-color: rgba(53, 53, 53, 0.6); } }
+@keyframes title-text {
+  25% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+body {
+  font-family: Roboto sans-serif;
+  font-size: 10px; }
+
+.first-block-wrapper {
+  width: 100%;
+  height: 600px;
+  padding-top: 5px;
+  background: url(../../img/ohvat-bg-title.jpg) no-repeat right top fixed;
+  background-clip: initial;
+  background-origin: initial;
+  background-size: cover;
+  overflow: hidden; }
+  .first-block-wrapper .ohvat-title-wrapper {
+    float: right;
+    margin-top: 80px;
+    margin-right: -1500px;
+    padding: 30px 0 30px 30px;
+    background-color: rgba(53, 53, 53, 0);
+    animation: title-block 4s .3s linear forwards; }
+    .first-block-wrapper .ohvat-title-wrapper div {
+      max-width: 700px;
+      width: 100%;
+      height: initial; }
+      .first-block-wrapper .ohvat-title-wrapper div h1 {
+        opacity: 0;
+        margin-bottom: 20px;
+        font-size: 3.6em;
+        color: #f7b417;
+        animation: title-text 5s 2.3s linear forwards; }
+      .first-block-wrapper .ohvat-title-wrapper div p {
+        opacity: 0;
+        font-size: 2.4em;
+        color: #f7b417;
+        animation: title-text 5s 3s linear forwards; }
+
+.ohvat-second-block {
+  position: relative;
+  width: 100%;
+  height: initial;
+  overflow: hidden; }
+  .ohvat-second-block::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    bottom: 0;
+    border-width: 0 0 1300px 1920px;
+    border-color: transparent transparent #47342d;
+    box-sizing: border-box;
+    z-index: -1;
+    content: ''; }
+  .ohvat-second-block .ohvat-screens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    z-index: 2; }
+    .ohvat-second-block .ohvat-screens div {
+      width: 45%;
+      text-align: center; }
+      .ohvat-second-block .ohvat-screens div img {
+        width: 100%;
+        height: auto; }
+      .ohvat-second-block .ohvat-screens div div {
+        min-width: 500px;
+        width: 60%;
+        margin: 0 auto; }
+        .ohvat-second-block .ohvat-screens div div h2 {
+          margin-bottom: 20px;
+          font-size: 3.6em;
+          color: #487ec1;
+          text-align: start; }
+        .ohvat-second-block .ohvat-screens div div p {
+          font-size: 2.4em;
+          color: #487ec1;
+          text-align: start; }
+  .ohvat-second-block .ohvat-mobile {
+    width: 100%;
+    padding: 20px 0; }
+    .ohvat-second-block .ohvat-mobile .ohvat-mobile-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1047px;
+      width: 100%;
+      height: 400px;
+      margin: 0 auto; }
+      .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div {
+        display: flex;
+        justify-content: space-between; }
+        .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div.mobile-three-img {
+          width: 58%; }
+          .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div.mobile-three-img div:nth-child(2) {
+            align-self: flex-end; }
+        .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div.mobile-two-img {
+          width: 38%; }
+          .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div.mobile-two-img div:first-child {
+            align-self: flex-end; }
+        .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div .ohvat-mobile-img {
+          position: relative;
+          display: flex;
+          justify-content: space-around;
+          width: 176px;
+          height: 304px;
+          border-radius: 7px;
+          background-color: #e7e1df; }
+          .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div .ohvat-mobile-img::before {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            right: 0;
+            width: 70px;
+            height: 2px;
+            margin: 0 auto;
+            border-radius: 3px;
+            border: 1px solid #fff;
+            background-color: rgba(255, 255, 255, 0.25);
+            content: ''; }
+          .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div .ohvat-mobile-img::after {
+            position: absolute;
+            bottom: 13px;
+            right: 0;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: #fff;
+            content: ''; }
+          .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div .ohvat-mobile-img div {
+            position: absolute;
+            bottom: 7px;
+            right: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            background-color: transparent;
+            content: ''; }
+          .ohvat-second-block .ohvat-mobile .ohvat-mobile-container div .ohvat-mobile-img img {
+            margin-top: 25px;
+            border: 1px solid #fff; }
+    .ohvat-second-block .ohvat-mobile .ohvat-mobile-content {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 0;
+      color: #f7b417; }
+      .ohvat-second-block .ohvat-mobile .ohvat-mobile-content h2 {
+        margin-bottom: 30px;
+        text-align: left;
+        font-size: 3.6em; }
+      .ohvat-second-block .ohvat-mobile .ohvat-mobile-content p {
+        text-align: right;
+        font-size: 2.4em; }
+
+.ohvat-third-block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0; }
+  .ohvat-third-block .pages-blocks-wrapper {
+    display: flex;
+    align-items: stretch;
+    width: 60%; }
+    .ohvat-third-block .pages-blocks-wrapper .pages-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 66.66%; }
+      .ohvat-third-block .pages-blocks-wrapper .pages-container div {
+        width: 50%;
+        overflow: hidden; }
+        .ohvat-third-block .pages-blocks-wrapper .pages-container div img {
+          display: block;
+          width: 100%;
+          height: auto; }
+    .ohvat-third-block .pages-blocks-wrapper .page-container {
+      width: 29.15%;
+      overflow: hidden; }
+      .ohvat-third-block .pages-blocks-wrapper .page-container img {
+        display: block;
+        width: 100%; }
+  .ohvat-third-block .ohvat-pages-title {
+    align-self: flex-start;
+    width: 38%;
+    margin: 0 auto; }
+    .ohvat-third-block .ohvat-pages-title h2 {
+      margin-bottom: 20px;
+      font-size: 3.6em;
+      color: #487ec1; }
+    .ohvat-third-block .ohvat-pages-title p {
+      font-size: 2.4em;
+      color: #487ec1; }
+
+/*# sourceMappingURL=style-ohvat.css.map */
