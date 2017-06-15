@@ -87,7 +87,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 25%;
-  height: 495px;
+  height: 480px;
   background-color: rgba(240,240,240,0.5);
   img {
     width: 50%;
@@ -346,12 +346,12 @@ a {
   padding: 0 10px 50px 10px;
   .portfolio-desktop {
     position: relative;
-    border: 15px solid $desktop-border;
-    border-bottom: 25px solid $desktop-border;
-    border-radius: 15px;
+    //border: 15px solid $desktop-border;
+    //border-bottom: 30px solid $desktop-border;
+    //border-radius: 15px;
     &::before {
       position: absolute;
-      top: 334px;
+      top: 340px;
       left: 0;
       right: 0;
       width: 90px;
@@ -364,7 +364,7 @@ a {
     }
     &::after {
       position: absolute;
-      top: 373px;
+      top: 380px;
       left: 0;
       right: 0;
       width: 140px;
@@ -379,6 +379,17 @@ a {
   .portfolio-key-info div {
     text-align: right;
     color: $desktop-black;
+  }
+  button {
+    margin-top: 60px;
+    padding: 12px 100px;
+    border-radius: 5px;
+    color: #fff;
+    background: #e7e1df;
+    text-align: center;
+  }
+  button:hover {
+    background: #353535;
   }
   .portfolio-key-info-h1 {
     font-size: 3.2em;
