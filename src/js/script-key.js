@@ -1,19 +1,20 @@
 $(document).ready( function () {
 
+    var firstBlock = $('.second-block');
+    var secondBlock = $('.third-block');
+    var thirdBlock = $('.fourth-block');
+    var imgFirstBlock = $('.second-block-img');
+    var imgSecondBlock = $('.third-block-img');
+    var imgThirdBlock = $('.fourth-block-img');
+    var descrFirstBlock = $('.second-block-descr');
+    var descrSecondBlock = $('.third-block-descr');
+    var descrThirdBlock = $('.fourth-block-descr');
+    var colorGrey = "#868686";
+    var colorWhite = "#fff";
+
     $(window).scroll(function () {
         var windowWidth = $(this).width();
         var windowScrollTop = $(this).scrollTop();
-        var firstBlock = $('.second-block');
-        var secondBlock = $('.third-block');
-        var thirdBlock = $('.fourth-block');
-        var imgFirstBlock = $('.second-block-img');
-        var imgSecondBlock = $('.third-block-img');
-        var imgThirdBlock = $('.fourth-block-img');
-        var descrFirstBlock = $('.second-block-descr');
-        var descrSecondBlock = $('.third-block-descr');
-        var descrThirdBlock = $('.fourth-block-descr');
-        var colorGrey = "#868686";
-        var colorWhite = "#fff";
 
         var firstBlocksAnimation = function( container, color, firstBlock) {
             container.delay(500).css( "background", color);
