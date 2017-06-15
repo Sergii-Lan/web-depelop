@@ -89,6 +89,36 @@ header {
         color: #e7e1df;
         text-transform: uppercase; }
 
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+  width: 968px;
+  margin: 0 auto; }
+  .contacts-block .contacts-foto {
+    width: 50%; }
+    .contacts-block .contacts-foto img {
+      display: block;
+      width: 90%;
+      margin: 20px auto 0 auto;
+      border-radius: 50%; }
+    .contacts-block .contacts-foto .contacts-foto-text {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 3.6em; }
+  .contacts-block .contacts-info {
+    width: 50%;
+    font-size: 2.1em; }
+    .contacts-block .contacts-info .contacts-info-1 {
+      margin-top: 20px; }
+    .contacts-block .contacts-info .contacts-info-2 {
+      margin-top: 60px; }
+    .contacts-block .contacts-info .contacts-info-3 {
+      margin-top: 60px; }
+
+.footer-bottom {
+  height: 214px;
+  background: url("../../img/img-footer.jpg") no-repeat top center; }
+
 body {
   margin: 0 auto;
   font-family: 'Ubuntu', sans-serif;
@@ -200,12 +230,12 @@ a {
 
 /**--------------------portfolio----------------*/
 .portfolio {
-  max-width: 1350px;
   margin: 0 auto; }
 
 .portfolio-h1 {
-  width: 300px;
-  margin: 0 auto;
+  width: 475px;
+  margin: 50px auto;
+  padding-bottom: 10px;
   border-bottom: 2px solid #28b494;
   color: #28b494;
   font-size: 4em;
@@ -215,17 +245,96 @@ a {
 .portfolio-key {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px; }
-  .portfolio-key div {
-    text-align: right; }
+  max-width: 1350px;
+  margin-top: 25px;
+  padding: 0 10px 50px 10px; }
+  .portfolio-key .portfolio-desktop {
+    position: relative;
+    border: 15px solid #e7e1df;
+    border-bottom: 25px solid #e7e1df;
+    border-radius: 15px; }
+    .portfolio-key .portfolio-desktop::before {
+      position: absolute;
+      top: 334px;
+      left: 0;
+      right: 0;
+      width: 90px;
+      height: 35px;
+      margin: 0 auto;
+      border-radius: 3px;
+      border: 1px solid #fff;
+      background-color: #e7e1df;
+      content: ''; }
+    .portfolio-key .portfolio-desktop::after {
+      position: absolute;
+      top: 373px;
+      left: 0;
+      right: 0;
+      width: 140px;
+      height: 8px;
+      margin: 0 auto;
+      border-radius: 3px;
+      border: 1px solid #fff;
+      background-color: #e7e1df;
+      content: ''; }
+  .portfolio-key .portfolio-key-info div {
+    text-align: right;
+    color: #4e4948; }
   .portfolio-key .portfolio-key-info-h1 {
-    font-size: 4em; }
+    font-size: 3.2em; }
   .portfolio-key .portfolio-key-info-h2 {
-    font-size: 3em; }
+    font-size: 2.4em;
+    margin-top: 30px; }
   .portfolio-key .portfolio-key-info-text {
     width: 530px;
-    font-size: 2em; }
+    margin-top: 60px;
+    font-size: 2.4em; }
   .portfolio-key .portfolio-key-info-text2 {
-    font-size: 2em; }
+    margin-top: 30px;
+    font-size: 2.4em; }
+
+.portfolio-display {
+  background: #bee8df;
+  margin-top: 10px;
+  padding: 10px 0; }
+  .portfolio-display ul {
+    text-align: center; }
+    .portfolio-display ul li {
+      display: inline-block;
+      font-size: 3.2em;
+      margin: 0 10px;
+      color: #ffffff; }
+    .portfolio-display ul .desktop-active {
+      color: #4e4948; }
+
+/**--------------------idea----------------*/
+.idea .idea-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; }
+  .idea .idea-line img {
+    width: 25%;
+    height: 315px; }
+  .idea .idea-line .idea-line-block {
+    width: 25%;
+    height: 315px;
+    background-color: #858282; }
+    .idea .idea-line .idea-line-block .idea-line-block-h1 {
+      text-align: center;
+      margin: 40px auto 0 auto;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      font-size: 3em;
+      padding-bottom: 15px;
+      width: 90%; }
+    .idea .idea-line .idea-line-block .idea-line-block-text {
+      width: 80%;
+      text-align: center;
+      margin: 40px auto 0 auto;
+      color: #fff;
+      font-size: 1.4em; }
 
 /*# sourceMappingURL=style-main.css.map */
