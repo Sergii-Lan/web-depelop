@@ -93,7 +93,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 968px;
-  margin: 0 auto; }
+  margin: 0 auto 50px auto; }
   .contacts-block .contacts-foto {
     width: 50%; }
     .contacts-block .contacts-foto img {
@@ -116,8 +116,19 @@ header {
       margin-top: 60px; }
 
 .footer-bottom {
-  height: 214px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background: url("../../img/img-footer.jpg") no-repeat top center; }
+  .footer-bottom .footer-bottom-text1 {
+    margin-top: 5px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #fff; }
+  .footer-bottom .footer-bottom-text2 {
+    margin-top: 50px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #3ab69a; }
 
 body {
   margin: 0 auto;
