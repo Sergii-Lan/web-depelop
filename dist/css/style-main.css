@@ -456,9 +456,10 @@ a {
   padding: 0 10px 50px 10px; }
   .portfolio-key .portfolio-desktop {
     position: relative;
-    display: none; }
-    .portfolio-key .portfolio-desktop.active {
-      display: block; }
+    width: 50%; }
+    .portfolio-key .portfolio-desktop img {
+      display: block;
+      margin: 0 auto; }
     .portfolio-key .portfolio-desktop::before {
       position: absolute;
       top: 353px;

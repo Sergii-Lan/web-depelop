@@ -346,11 +346,12 @@ a {
   margin-top: 25px;
   padding: 0 10px 50px 10px;
   .portfolio-desktop {
-    &.active {
+    img {
       display: block;
+      margin: 0 auto;
     }
     position: relative;
-    display: none;
+    width: 50%;
     //border: 15px solid $desktop-border;
     //border-bottom: 30px solid $desktop-border;
     //border-radius: 15px;
@@ -474,4 +475,5 @@ a {
   }
 
 }
+
 
