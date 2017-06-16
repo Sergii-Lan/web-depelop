@@ -457,7 +457,7 @@ a {
   .portfolio-key .portfolio-desktop {
     position: relative;
     display: none; }
-    .portfolio-key .portfolio-desktop .active {
+    .portfolio-key .portfolio-desktop.active {
       display: block; }
     .portfolio-key .portfolio-desktop::before {
       position: absolute;

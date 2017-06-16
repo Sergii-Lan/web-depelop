@@ -346,7 +346,7 @@ a {
   margin-top: 25px;
   padding: 0 10px 50px 10px;
   .portfolio-desktop {
-    .active {
+    &.active {
       display: block;
     }
     position: relative;
