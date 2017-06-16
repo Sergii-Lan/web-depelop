@@ -461,7 +461,7 @@ a {
       display: block; }
     .portfolio-key .portfolio-desktop::before {
       position: absolute;
-      top: 340px;
+      top: 353px;
       left: 0;
       right: 0;
       width: 90px;
@@ -473,7 +473,7 @@ a {
       content: ''; }
     .portfolio-key .portfolio-desktop::after {
       position: absolute;
-      top: 380px;
+      top: 391px;
       left: 0;
       right: 0;
       width: 140px;
