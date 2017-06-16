@@ -173,14 +173,14 @@ a {
   flex-direction: column;
   align-items: center;
   width: 25%;
-  height: 480px;
+  height: 490px;
   background-color: rgba(240, 240, 240, 0.5); }
   .tech-html img {
     width: 50%; }
 
 .tech-ajax {
   width: 24%;
-  height: 730px;
+  height: 740px;
   background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   flex-direction: column;
@@ -197,6 +197,7 @@ a {
 .tech-css {
   width: 67%;
   height: 240px;
+  margin-bottom: 10px;
   background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   justify-content: space-around;
@@ -453,11 +454,11 @@ a {
   max-width: 1350px;
   margin-top: 25px;
   padding: 0 10px 50px 10px; }
-  .portfolio-key .portfolio-desktop .portfolio-active {
-    display: block; }
   .portfolio-key .portfolio-desktop {
     position: relative;
     display: none; }
+    .portfolio-key .portfolio-desktop .active {
+      display: block; }
     .portfolio-key .portfolio-desktop::before {
       position: absolute;
       top: 340px;
