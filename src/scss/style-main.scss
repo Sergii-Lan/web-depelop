@@ -87,7 +87,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 25%;
-  height: 480px;
+  height: 490px;
   background-color: rgba(240,240,240,0.5);
   img {
     width: 50%;
@@ -96,7 +96,7 @@ a {
 
 .tech-ajax {
   width: 24%;
-  height: 730px;
+  height: 740px;
   background-color: rgba(240,240,240,0.5);
   display: flex;
   flex-direction: column;
@@ -116,6 +116,7 @@ a {
 .tech-css {
   width: 67%;
   height: 240px;
+  margin-bottom: 10px;
   background-color: rgba(240,240,240,0.5);
   display: flex;
   justify-content: space-around;
@@ -345,7 +346,11 @@ a {
   margin-top: 25px;
   padding: 0 10px 50px 10px;
   .portfolio-desktop {
+    .active {
+      display: block;
+    }
     position: relative;
+    display: none;
     //border: 15px solid $desktop-border;
     //border-bottom: 30px solid $desktop-border;
     //border-radius: 15px;
@@ -469,4 +474,5 @@ a {
   }
 
 }
+
 

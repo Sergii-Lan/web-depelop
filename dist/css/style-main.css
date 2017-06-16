@@ -453,8 +453,11 @@ a {
   max-width: 1350px;
   margin-top: 25px;
   padding: 0 10px 50px 10px; }
+  .portfolio-key .portfolio-desktop .portfolio-active {
+    display: block; }
   .portfolio-key .portfolio-desktop {
-    position: relative; }
+    position: relative;
+    display: none; }
     .portfolio-key .portfolio-desktop::before {
       position: absolute;
       top: 340px;
