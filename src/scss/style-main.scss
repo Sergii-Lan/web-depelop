@@ -346,17 +346,18 @@ a {
   margin-top: 25px;
   padding: 0 10px 50px 10px;
   .portfolio-desktop {
-    .active {
+    img {
       display: block;
+      margin: 0 auto;
     }
     position: relative;
-    display: none;
+    width: 50%;
     //border: 15px solid $desktop-border;
     //border-bottom: 30px solid $desktop-border;
     //border-radius: 15px;
     &::before {
       position: absolute;
-      top: 340px;
+      top: 353px;
       left: 0;
       right: 0;
       width: 90px;
@@ -369,7 +370,7 @@ a {
     }
     &::after {
       position: absolute;
-      top: 380px;
+      top: 391px;
       left: 0;
       right: 0;
       width: 140px;
