@@ -1,0 +1,296 @@
+$blue: #00BC98;
+$yellow: #FFFF00;
+$lightGrey: #E0DBDB;
+$red: #A52A2A;
+
+
+/*----- animate details -----*/
+#detail-red {
+  transform-origin: 50% 50%;
+  animation: rotate-reverse 5s linear infinite;
+}
+#detail-bleck path {
+  transform-origin: 50% 50%;
+  animation: rotate-reverse 2.5s linear infinite;
+}
+#detail-grey path {
+  transform-origin: 50% 50%;
+  animation: rotate 6s linear infinite;
+}
+#detail-light-grey path {
+  transform-origin: 50% 50%;
+  animation: rotate-reverse 8s linear infinite;
+}
+#detail-blue {
+  transform-origin: 50% 50%;
+  animation: rotate 7s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-reverse {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/*---------- bulb ----------*/
+
+#bulb path.st21 {
+  fill: $yellow;
+  animation: bulb-light 4s linear infinite;
+}
+
+@keyframes bulb-light {
+  5% {
+    fill: $lightGrey;
+  }
+  10% {
+    fill: $yellow;
+  }
+  15% {
+    fill: $lightGrey;
+  }
+  20% {
+    fill: $yellow;
+  }
+  60% {
+    fill: $yellow;
+  }
+  75% {
+    fill: $lightGrey;
+  }
+  85% {
+    fill: $yellow;
+  }
+  100% {
+    fill: $yellow;
+  }
+}
+
+/*------------ CLOCK -------------*/
+
+#clock {
+  .st7 {
+    transform-origin: left;
+    animation: rotate-clock 60s linear infinite;
+  }
+}
+  @keyframes rotate-clock {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/*------------ computer writer ---------------*/
+
+#wrighting-desktop {
+  rect {
+    transform-origin: left;
+    &#XMLID_117_ {
+      animation: wrighting-weight-1 3s linear infinite;
+    }
+    &#XMLID_116_ {
+       animation: wrighting-weight-1 2s linear infinite;
+    }
+    &#XMLID_115_ {
+      animation: wrighting-weight-1 3s linear infinite;
+    }
+    &#XMLID_114_ {
+      animation: wrighting-weight-2 5s linear infinite;
+    }
+    &#XMLID_113_ {
+      animation: wrighting-weight-3 3s linear infinite;
+    }
+    &#XMLID_112_ {
+      animation: wrighting-weight-2 5s linear infinite;
+    }
+    &#XMLID_111_ {
+      animation: wrighting-weight-2 3s linear infinite;
+    }
+    &#XMLID_110_ {
+      animation: wrighting-weight-2 2s 3s linear infinite;
+    }
+    &#XMLID_109_ {
+      animation: wrighting-weight-2 3s 4s linear infinite;
+    }
+    &#XMLID_108_ {
+      animation: wrighting-weight-2 4s linear infinite;
+    }
+    &#XMLID_107_ {
+      animation: wrighting-weight-2 3s linear infinite;
+    }
+    &#XMLID_106_ {
+      animation: wrighting-weight-2 4s linear infinite;
+    }
+    &#XMLID_105_ {
+      animation: wrighting-weight-1 3s  linear infinite;
+    }
+    &#XMLID_104_ {
+      animation: wrighting-weight-3 5s  linear infinite;
+    }
+    &#XMLID_103_ {
+      animation: wrighting-weight-1 4s  linear infinite;
+    }
+    &#XMLID_101_ {
+      animation: wrighting-weight-2 2s  linear infinite;
+    }
+    &#XMLID_100_ {
+      animation: wrighting-weight-3 5s  linear infinite;
+    }
+    &#XMLID_99_ {
+      animation: wrighting-weight-2 4s  linear infinite;
+    }
+    &#XMLID_98_ {
+      animation: wrighting-weight-2 2s  linear infinite;
+    }
+    &#XMLID_97_ {
+      animation: wrighting-weight-3 3s  linear infinite;
+    }
+    &#XMLID_96_ {
+      animation: wrighting-weight-2 4s  linear infinite;
+    }
+    &#XMLID_95_ {
+      animation: wrighting-weight-2 5s  linear infinite;
+    }
+    &#XMLID_94_ {
+      animation: wrighting-weight-2 3s  linear infinite;
+    }
+  }
+}
+
+@keyframes wrighting-weight-1 {
+  20% {
+    fill: $yellow;
+    transform: scaleX(4);
+  }
+  50% {
+    transform: scaleX(3);
+  }
+  51% {
+    fill: $blue;
+  }
+  70% {
+    fill: $blue;
+    transform: scaleX(6);
+  }
+  71% {
+    fill: $red;
+  }
+  90% {
+    transform: scaleX(3);
+  }
+}
+
+@keyframes wrighting-weight-2 {
+  20% {
+    fill: $blue;
+    transform: scaleX(1.5);
+  }
+  50% {
+    fill: $blue;
+    transform: scaleX(2);
+  }
+  51% {
+    fill: $red;
+  }
+  70% {
+    fill: $yellow;
+    transform: scaleX(1);
+  }
+  71% {
+    fill: $yellow;
+  }
+  90% {
+    transform: scaleX(2);
+  }
+}
+
+@keyframes wrighting-weight-3 {
+  20% {
+    fill: #DBD9DA;
+    transform: scaleX(3);
+  }
+  50% {
+    fill: #DBD9DA;
+    transform: scaleX(.5);
+  }
+  51% {
+    fill: $yellow;
+  }
+  70% {
+    fill: $yellow;
+    transform: scaleX(4);
+  }
+  71% {
+    fill: $blue;
+  }
+  90% {
+    transform: scaleX(2);
+  }
+}
+/*-------------- grafik ----------------*/
+
+#grafik-circle {
+  circle {
+    transform-origin: center;
+    animation: move-circle 4s linear infinite;
+  }
+}
+
+@keyframes move-circle {
+  15% {
+    transform: translate(16px, 9px);
+  }
+  30% {
+    transform: translate(31px, 7px);
+  }
+  45% {
+    transform: translate(48px, -21px);
+  }
+  60% {
+    transform: translate(64px, -13px);
+  }
+  75% {
+    transform: translate(80px, -17px);
+  }
+  95% {
+    transform: translate(96px, -41px);
+  }
+  100% {
+    transform: translate(96px, -41px);
+  }
+}
+
+/*--------------cloud water------------*/
+
+#water-1 {
+  transform-origin: center;
+  animation: water-down 3s linear infinite;
+}
+
+@keyframes water-down {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-80px, 80px);
+  }
+}
+#water-2 {
+  transform-origin: center;
+  animation: water-up 3s linear infinite;
+}
+
+@keyframes water-up {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(175px, -180px);
+  }
+}
