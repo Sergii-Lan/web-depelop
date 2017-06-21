@@ -17,7 +17,7 @@ $idea-block-back: #858282;
   background-color: rgba(93, 91, 99, .78);
 }
 
-@mixin  tech-hover-heading() {
+@mixin tech-hover-heading() {
   display: inline-block;
   margin: 25px auto 0 auto;
   padding: 5px 7px;
@@ -49,7 +49,6 @@ body {
 a {
   text-decoration: none;
 }
-
 
 .first-block {
   height: 100px;
@@ -88,7 +87,7 @@ a {
   align-items: center;
   width: 25%;
   height: 490px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   img {
     width: 50%;
   }
@@ -97,7 +96,7 @@ a {
 .tech-ajax {
   width: 24%;
   height: 740px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,7 +116,7 @@ a {
   width: 67%;
   height: 240px;
   margin-bottom: 10px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -136,7 +135,7 @@ a {
   position: relative;
   width: 30%;
   height: 240px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   align-items: center;
   img {
@@ -167,7 +166,7 @@ a {
   position: relative;
   width: 30%;
   height: 240px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   align-items: center;
   .grunt-hover {
@@ -191,7 +190,7 @@ a {
 .tech-js {
   width: 67%;
   height: 240px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -216,7 +215,7 @@ a {
   position: relative;
   width: 18%;
   height: 240px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   align-items: center;
   .bootstrap-hover {
@@ -240,7 +239,7 @@ a {
 .tech-php {
   width: 38%;
   height: 240px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -259,7 +258,7 @@ a {
   position: relative;
   width: 20%;
   height: 240px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   align-items: center;
   .sass-hover {
@@ -284,7 +283,7 @@ a {
   position: relative;
   width: 20%;
   height: 240px;
-  background-color: rgba(240,240,240,0.5);
+  background-color: rgba(240, 240, 240, 0.5);
   display: flex;
   align-items: center;
   .ps-hover {
@@ -321,8 +320,12 @@ a {
   font-size: 2.4em;
 }
 
-
 /**--------------------portfolio----------------*/
+
+@keyframes port-anim {
+  from	{ opacity: 0 }
+  to	{ opacity: 1 }
+}
 
 .portfolio {
   margin: 0 auto;
@@ -344,50 +347,71 @@ a {
   justify-content: space-between;
   max-width: 1350px;
   margin-top: 25px;
-  padding: 0 10px 50px 10px;
-  .portfolio-desktop {
+  padding: 0 10px 0 10px;
+  .portfolio-desktop-no-before {
+    position: relative;
+    width: 50%;
+    display: none;
+    //border: 15px solid $desktop-border;
+    //border-bottom: 30px solid $desktop-border;
+    //border-radius: 15px;
     img {
       display: block;
       margin: 0 auto;
+      animation-name: bounce;
+      animation-duration: 3s;
     }
+  }
+  .portfolio-desktop {
     position: relative;
     width: 50%;
     //border: 15px solid $desktop-border;
     //border-bottom: 30px solid $desktop-border;
     //border-radius: 15px;
-    &::before {
-      position: absolute;
-      top: 353px;
-      left: 0;
-      right: 0;
-      width: 90px;
-      height: 35px;
-      margin: 0 auto;
-      border-radius: 3px;
-      border: 1px solid #fff;
-      background-color: $desktop-border;
-      content: '';
-    }
-    &::after {
-      position: absolute;
-      top: 391px;
-      left: 0;
-      right: 0;
-      width: 140px;
-      height: 8px;
-      margin: 0 auto;
-      border-radius: 3px;
-      border: 1px solid #fff;
-      background-color: $desktop-border;
-      content: '';
-    }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        animation-name: port-anim;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+      }
+      &::before {
+        position: absolute;
+        top: 353px;
+        left: 0;
+        right: 0;
+        width: 90px;
+        height: 35px;
+        margin: 0 auto;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        background-color: $desktop-border;
+        content: '';
+      }
+      &::after {
+        position: absolute;
+        top: 391px;
+        left: 0;
+        right: 0;
+        width: 140px;
+        height: 8px;
+        margin: 0 auto;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        background-color: $desktop-border;
+        content: '';
+      }
+
   }
+
   .portfolio-key-info div {
     text-align: right;
     color: $desktop-black;
   }
   button {
-    margin-top: 60px;
+    margin-top: 70px;
+    margin-bottom: 50px;
     padding: 12px 100px;
     border-radius: 5px;
     color: #fff;
@@ -403,17 +427,17 @@ a {
 
   .portfolio-key-info-h2 {
     font-size: 2.4em;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   .portfolio-key-info-text {
     width: 530px;
-    margin-top: 60px;
+    margin-top: 65px;
     font-size: 2.4em;
   }
 
   .portfolio-key-info-text2 {
-    margin-top: 30px;
+    margin-top: 35px;
     font-size: 2.4em;
   }
 

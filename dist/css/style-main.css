@@ -435,6 +435,11 @@ a {
   font-size: 2.4em; }
 
 /**--------------------portfolio----------------*/
+@keyframes port-anim {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .portfolio {
   margin: 0 auto; }
 
@@ -453,13 +458,25 @@ a {
   justify-content: space-between;
   max-width: 1350px;
   margin-top: 25px;
-  padding: 0 10px 50px 10px; }
+  padding: 0 10px 0 10px; }
+  .portfolio-key .portfolio-desktop-no-before {
+    position: relative;
+    width: 50%;
+    display: none; }
+    .portfolio-key .portfolio-desktop-no-before img {
+      display: block;
+      margin: 0 auto;
+      animation-name: bounce;
+      animation-duration: 3s; }
   .portfolio-key .portfolio-desktop {
     position: relative;
     width: 50%; }
     .portfolio-key .portfolio-desktop img {
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      animation-name: port-anim;
+      animation-duration: 1.5s;
+      animation-timing-function: linear; }
     .portfolio-key .portfolio-desktop::before {
       position: absolute;
       top: 353px;
@@ -488,7 +505,8 @@ a {
     text-align: right;
     color: #4e4948; }
   .portfolio-key button {
-    margin-top: 60px;
+    margin-top: 70px;
+    margin-bottom: 50px;
     padding: 12px 100px;
     border-radius: 5px;
     color: #fff;
@@ -500,13 +518,13 @@ a {
     font-size: 3.2em; }
   .portfolio-key .portfolio-key-info-h2 {
     font-size: 2.4em;
-    margin-top: 30px; }
+    margin-top: 35px; }
   .portfolio-key .portfolio-key-info-text {
     width: 530px;
-    margin-top: 60px;
+    margin-top: 65px;
     font-size: 2.4em; }
   .portfolio-key .portfolio-key-info-text2 {
-    margin-top: 30px;
+    margin-top: 35px;
     font-size: 2.4em; }
 
 .portfolio-display {
