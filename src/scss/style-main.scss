@@ -463,6 +463,11 @@ a {
 
 /**--------------------idea----------------*/
 
+@keyframes idea-img-hover {
+  from	{ transform: scale(1.5); margin-left: -125px; }
+  to	{ transform: scale(1); margin-left: 0px; }
+}
+
 .idea {
   .idea-line {
     display: flex;
@@ -471,9 +476,20 @@ a {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    img {
+    .idea-line-img-block {
       width: 25%;
       height: 315px;
+      overflow: hidden;
+      img {
+        transform: scale(1.5);
+        height: 315px;
+        margin-left: -125px;
+      }
+    }
+    .idea-line-img-block:hover img {
+      animation-name: idea-img-hover;
+      animation-duration: 4s;
+      animation-timing-function: linear;
     }
     .idea-line-block {
       width: 25%;
