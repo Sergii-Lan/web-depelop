@@ -18,7 +18,7 @@ $idea-block-back: #858282;
 }
 
 @mixin tech-hover-heading() {
-  display: inline-block;
+  display: table;
   margin: 25px auto 0 auto;
   padding: 5px 7px;
   background: #33302f;
@@ -85,6 +85,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 25%;
   height: 490px;
   background-color: rgba(240, 240, 240, 0.5);
@@ -100,6 +101,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   img {
     width: 90%;
   }
@@ -222,6 +224,7 @@ a {
     @include tech-hover;
     .bootstrap-hover-heading {
       @include tech-hover-heading;
+      font-size: 2.7em;
     }
     .bootstrap-hover-text {
       @include tech-hover-text;
@@ -327,6 +330,16 @@ a {
   to	{ opacity: 1 }
 }
 
+@keyframes before-move {
+  from {width: 1px;}
+  to {width: 90px;}
+}
+
+@keyframes after-move {
+  from {width: 1px;}
+  to {width: 140px;}
+}
+
 .portfolio {
   margin: 0 auto;
 }
@@ -352,9 +365,6 @@ a {
     position: relative;
     width: 50%;
     display: none;
-    //border: 15px solid $desktop-border;
-    //border-bottom: 30px solid $desktop-border;
-    //border-radius: 15px;
     img {
       display: block;
       margin: 0 auto;
@@ -373,7 +383,7 @@ a {
         display: block;
         margin: 0 auto;
         animation-name: port-anim;
-        animation-duration: 1.5s;
+        animation-duration: 1s;
         animation-timing-function: linear;
       }
       &::before {
@@ -388,8 +398,14 @@ a {
         border: 1px solid #fff;
         background-color: $desktop-border;
         content: '';
+        animation-name: before-move;
+        animation-duration: 1s;
+        animation-timing-function: linear;
       }
       &::after {
+        animation-name: after-move;
+        animation-duration: 1s;
+        animation-timing-function: linear;
         position: absolute;
         top: 391px;
         left: 0;
@@ -402,6 +418,15 @@ a {
         background-color: $desktop-border;
         content: '';
       }
+    &.active-no-before {
+      font-size: 2em;
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
 
   }
 
@@ -454,6 +479,7 @@ a {
       font-size: 3.2em;
       margin: 0 10px;
       color: #ffffff;
+      cursor: pointer;
     }
     .desktop-active {
       color: $desktop-black;
@@ -464,8 +490,8 @@ a {
 /**--------------------idea----------------*/
 
 @keyframes idea-img-hover {
-  from	{ transform: scale(1.5); margin-left: -125px; }
-  to	{ transform: scale(1); margin-left: 0px; }
+  from	{ transform: scale(1.2);}
+  to	{ transform: scale(1);}
 }
 
 .idea {
@@ -481,14 +507,13 @@ a {
       height: 315px;
       overflow: hidden;
       img {
-        transform: scale(1.5);
+        transform: scale(1.2);
         height: 315px;
-        margin-left: -125px;
       }
     }
     .idea-line-img-block:hover img {
       animation-name: idea-img-hover;
-      animation-duration: 4s;
+      animation-duration: 5s;
       animation-timing-function: linear;
     }
     .idea-line-block {
@@ -516,4 +541,12 @@ a {
 
 }
 
+
+@media (max-width: 996px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+}
 
